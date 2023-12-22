@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Store</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="login-container">
+    <h1>Login</h1>
+    <form id="login-form">
+      <label for="username">Username:</label>
+      <input type="text" id="username" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+      <button type="button" onclick="login()">Login</button>
+    </form>
+  </div>
+
+  <div id="store-container" style="display:none;">
+    <h1>Welcome to the Online Store</h1>
+    <div id="product-list">
+      <!-- Product cards will be dynamically added here -->
+    </div>
+    <div id="payment-options">
+      <h2>Payment Options</h2>
+      <label><input type="radio" name="payment" value="credit"> Credit Card</label>
+      <label><input type="radio" name="payment" value="paypal"> PayPal</label>
+      <button onclick="checkout()">Checkout</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
